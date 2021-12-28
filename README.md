@@ -2,7 +2,7 @@
 
 Conversational recommendation systems (CRS) using knowledge graphs is a hot topic as they intend to return the best real-time recommendations to users through a multi-turn interactive conversation. CRS allows users to provide their feedback during the conversation, unlike the traditional recommendation systems. CRS can combine the knowledge of the predefined user profile with the current user requirements to output custom yet most relevant recommendations or suggestions. This work will implement a chatbot using the open-source chatbot development framework - RASA and the most powerful, super-fast and leading cloud graph database - TigerGraph. 
 
-**NOTE:**:
+> **NOTE:**
 This help page will not go into the depth of RASA, TigerGraph functionalities. This help page will touchbase and demo how TigerGraph can be integrated with RASA.
 
 The below video will highlight the runtime of this setup and some sample real-time conversations using the power of RASA + TigerGraph,
