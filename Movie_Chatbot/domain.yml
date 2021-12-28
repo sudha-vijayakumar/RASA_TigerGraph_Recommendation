@@ -1,0 +1,57 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- movie_recos:
+    use_entities: true
+- patient_location:
+    use_entities: true
+entities:
+- userid
+- userlocation
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_movie_recos_filled:
+  - text: there are {count} people infected  {userid}
+  utter_movie_recos_empty:
+  - text: there are no records of infection.
+  utter_infection_place_filled:
+  - text: 'the patient  {userid}  got infected at {place} '
+  utter_infection_place_empty:
+  - text: there are no records of infection location.
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_responsibility:
+  - text: Hi there! I can recommend movies! Just provide me the user id :)
+actions:
+- action_movie_recos
+forms: {}
+e2e_actions: []
