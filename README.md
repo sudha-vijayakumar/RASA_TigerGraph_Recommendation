@@ -21,10 +21,10 @@ Here is the high-level outline of the technological stack used in this demo proj
 
 ### Step-1: **(RASA)** Implement language models, user intents and backend actions 
 
-**Beginner tutorial:** This is a very good spot to learn about setting up a basic chatbot using RASA and understands the core framework constructs.
-- https://rasa.com/docs/rasa/playground/
+> **Beginner tutorial:** This is a very good spot to learn about setting up a basic chatbot using RASA and understands the core framework constructs.
+  - https://rasa.com/docs/rasa/playground/
 
-#### Install RASA
+#### 1a: Install RASA
 
 Open a new terminal and setup RASA using the below commands:
 
@@ -32,7 +32,7 @@ Open a new terminal and setup RASA using the below commands:
 - $ source bin/activate
 - $ pip install rasa
 
-#### Create new RASA project
+#### 1b: Create new RASA project
 - $ rasa init
 
 After the execution of the above command, a new RASA 'Movie_Chatbot' project will be created in the current directory as shown below,
@@ -47,7 +47,7 @@ Below is a kick-off conversation with the newly created chatbot,
 
 Ya, that's quiet simple to create a chatbot now with RASA!
 
-#### Define intents, stories, action triggers
+#### 1c: Define intents, stories, action triggers
 Now, navigate to the project folder Movie_Chatbot/data and modify the default nlu.yml and rules.yml files by adding intents, rules for our movie recommendation business usecase as show below,
 
 <p align="center">
@@ -58,10 +58,10 @@ Now, navigate to the project folder Movie_Chatbot/data and modify the default nl
 <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%201.43.59%20AM.png" width="700" height="450">
 </p>
 
-Install the TigerGraph python library using pip with the below command,
+#### 1d: Install the TigerGraph python library using pip with the below command,
 - pip install pyTigerGraph
 
-#### Define action endpoints
+#### 1e: Define action endpoints
 Now, navigate to the project folder Movie_Chatbot/actions and modify the actions.py file to include TigerGraph connection parameters and action definitions with the respective movie recommendation CSQL query as show below,
 
 
@@ -85,9 +85,10 @@ With this step, we are done with the installation and configuration of RASA chat
 
 ### Step-2: **(TigerGraph)** Setup TigerGraph database and querying APIs
 
-**Beginner tutorial:** This is a very good spot to learn about setting up tigergraph database on the cloud and implement CSQL queries,
-- https://www.tigergraph.com/blog/taking-your-first-steps-in-learning-tigergraph-cloud/
+> **Beginner tutorial:** This is a very good spot to learn about setting up tigergraph database on the cloud and implement CSQL queries,
+  - https://www.tigergraph.com/blog/taking-your-first-steps-in-learning-tigergraph-cloud/
 
+#### 2a: Setup tgcloud database
 - Go to, http;//tgcloud.io/ and create a new account.
 - Activate the account.
 - Go to, "My Solutions" and click "Create Solution"
@@ -137,6 +138,7 @@ And Yes!, the TigerGraph Movie recommendation Graph database is created. Hold on
   
 All Set! The TigerGraph Database is up and running. Are we done? Almost! There is one more thing to do!
 
+#### 2b: Configure secret token
 - Let's set up the secret key access to the cloud TigerGraph API as it is very crucial to ensure a secure way of providing access to the data. 
 - Go to, Admin Dashboard->Users->Management and define a secret key as shown below,
 
