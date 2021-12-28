@@ -33,12 +33,12 @@ Open a new terminal and setup RASA using the below commands:
 
 After the execution of the above command, a new RASA 'Movie_Chatbot' project will be created in the current directory as shown below,
 <p align="center">
-<img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%201.38.06%20AM.png" width="250" height="350">
+<img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%201.38.06%20AM.png" width="500" height="350">
 </p>
 
 Below is a kick-off conversation with the newly created chatbot,
 <p align="center">
-<img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%201.40.48%20AM.png" width="250" height="350">
+<img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%201.40.48%20AM.png" width="500" height="350">
 </p>
 
 Ya, that's quiet simple to create a chatbot now with RASA!
