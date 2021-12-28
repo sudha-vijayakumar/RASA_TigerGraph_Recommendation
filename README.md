@@ -1,8 +1,9 @@
 > How to run (shortcut):
 
 The below video will highlight the runtime of this setup and some sample real-time conversations using the power of RASA + TigerGraph,
+<p align="center">
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Y1s2IwjFzKM/0.jpg)](https://www.youtube.com/watch?v=Y1s2IwjFzKM)
-
+</p>
 
 # Movie recommendations using RASA + TigerGraph
 
