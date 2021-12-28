@@ -140,6 +140,11 @@ All Set! The TigerGraph Database is up and running. Are we done? Almost! There i
   <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.10.56%20AM.png">
   </p>
   
+  
+  <p align="center">
+  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.11.19%20AM.png">
+  </p>
+  
 - **NOTE:** Please remember to copy the key to be used in the RASA connection configuration (Movie_ChatBot/actions/actions.py)
 
 
@@ -148,11 +153,6 @@ All Set! The TigerGraph Database is up and running. Are we done? Almost! There i
 - In this work, we are using a open-source javascript based chatbot UI to interact with the RASA solution we implemented in Step-1.
 - The RASA server endpoint is configured in the Chatbot-Widget/static/Chat.js as shown below,
  
-  
-  <p align="center">
-  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.11.19%20AM.png">
-  </p>
-  
   <p align="center">
   <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.17.45%20AM.png">
   </p>
@@ -177,7 +177,7 @@ Hit open Chatbot-Widget/index.html to start interacting with the TigerBot movie 
 Yes, we are DONEEE! 
 
 Below video will highlight the runtime of this setup and some sample real-time conversations using the power of RASA + TigerGraph,
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Y1s2IwjFzKM/0.jpg)](https://www.youtube.com/watch?v=Y1s2IwjFzKM)
 
 
 Hope, this source is informative and helpful.
