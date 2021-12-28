@@ -32,17 +32,27 @@ Open a new terminal and setup RASA using the below commands:
 - $ rasa init
 
 After the execution of the above command, a new RASA 'Movie_Chatbot' project will be created in the current directory as shown below,
-Fig 1
+<p align="center">
+<img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%201.38.06%20AM.png">
+</p>
 
 Below is a kick-off conversation with the newly created chatbot,
-Fig 2 
+<p align="center">
+<img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%201.40.48%20AM.png">
+</p>
 
 Ya, that's quiet simple to create a chatbot now with RASA!
 
 #### Define intents, stories, action triggers
 Now, navigate to the project folder Movie_Chatbot/data and modify the default nlu.yml and rules.yml files by adding intents, rules for our movie recommendation business usecase as show below,
 
-Fig 3,4
+<p align="center">
+<img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%201.43.43%20AM.png">
+</p>
+
+<p align="center">
+<img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%201.43.59%20AM.png">
+</p>
 
 Install the TigerGraph python library using pip with the below command,
 - pip install pyTigerGraph
@@ -50,7 +60,14 @@ Install the TigerGraph python library using pip with the below command,
 #### Define action endpoints
 Now, navigate to the project folder Movie_Chatbot/actions and modify the actions.py file to include TigerGraph connection parameters and action definitions with the respective movie recommendation CSQL query as show below,
 
-Fig 5,6
+
+<p align="center">
+<img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%201.46.21%20AM.png">
+</p>
+
+<p align="center">
+<img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%201.47.29%20AM.png">
+</p>
 
 
 Here, 'RecommendMovies' is the name of the CSQL query in the tgcloud database which will discuss in detail in the next section.
@@ -73,20 +90,27 @@ And Yes!, the TigerGraph Movie recommendation Graph database is created. Hold on
 
 - Go to, GraphStudio and 'Load Data' by selecting the *.csv files and hitting on the 'play' button shown below. 
 - Once the data is loaded, data statistics should display a green 'FINISHED' message as show below.
-  Fig
+  <p align="center">
+  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%201.50.07%20AM.png">
+  </p>
   
 - Go to, 'Write Queries' and implement the CSQL queries here as shown below, 
-  Fig
+  <p align="center">
+  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.00.02%20AM.png">
+  </p>
+
 - Save the CSQL query and publish it using the 'up arrow' button.
 
 - Lets, test the query by running with a sample input as shown below,
-  Fig
+  <p align="center">
+  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.00.29%20AM.png">
+  </p>
   
 All Set! The TigerGraph Database is up and running. Are we done? Almost! There is one more thing to do!
 
 - Let's set up the secret key access to the cloud TigerGraph API as it is very crucial to ensure a secure way of providing access to the data. 
 - Go to, Admin Dashboard->Users->Management and define a secret key as shown below,
-- 
+
 - **NOTE:** Please remember to copy the key to be used in the RASA connection configuration (Movie_ChatBot/actions/actions.py)
 
 
@@ -94,7 +118,34 @@ All Set! The TigerGraph Database is up and running. Are we done? Almost! There i
 
 - In this work, we are using a open-source javascript based chatbot UI to interact with the RASA solution we implemented in Step-1.
 - The RASA server endpoint is configured in the Chatbot-Widget/static/Chat.js as shown below,
-  Fig
+  
+  <p align="center">
+  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.03.23%20AM.png">
+  </p>
+  
+  <p align="center">
+  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.03.57%20AM.png">
+  </p>
+  
+  <p align="center">
+  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.05.57%20AM.png">
+  </p>
+  
+  <p align="center">
+  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.06.18%20AM.png">
+  </p>
+  
+  <p align="center">
+  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.10.56%20AM.png">
+  </p>
+  
+  <p align="center">
+  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.11.19%20AM.png">
+  </p>
+  
+  <p align="center">
+  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.17.45%20AM.png">
+  </p>
 
 Alright, we are one-step close to see the working of the TigerGraph and RASA integration.
 
