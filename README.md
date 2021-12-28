@@ -5,6 +5,10 @@ Conversational recommendation systems (CRS) using knowledge graphs is a hot topi
 **NOTE:**:
 This help page will not go into the depth of RASA, TigerGraph functionalities. This help page will touchbase and demo how TigerGraph can be integrated with RASA.
 
+The below video will highlight the runtime of this setup and some sample real-time conversations using the power of RASA + TigerGraph,
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Y1s2IwjFzKM/0.jpg)](https://www.youtube.com/watch?v=Y1s2IwjFzKM)
+
+
 ## Technological Stack
 
 Here is the high-level outline of the technological stack used in this demo project,
@@ -47,7 +51,7 @@ Ya, that's quiet simple to create a chatbot now with RASA!
 Now, navigate to the project folder Movie_Chatbot/data and modify the default nlu.yml and rules.yml files by adding intents, rules for our movie recommendation business usecase as show below,
 
 <p align="center">
-<img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%201.43.43%20AM.png" width="700" height="450">
+<img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%201.43.43%20AM.png">
 </p>
 
 <p align="center">
@@ -89,7 +93,7 @@ With this step, we are done with the installation and configuration of RASA chat
 - Go to, "My Solutions" and click "Create Solution"
 
   <p align="center">
-  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.00.02%20AM.png" width="700" height="450">
+  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.00.02%20AM.png">
   </p>
   
 - Select the starter kit as shown below then click Next twice.
@@ -105,7 +109,7 @@ And Yes!, the TigerGraph Movie recommendation Graph database is created. Hold on
 
 - Go to, GraphStudio and 'Load Data' by selecting the *.csv files and hitting on the 'play' button shown below. 
 <p align="center">
-  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.03.23%20AM.png" width="700" height="450">
+  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.03.23%20AM.png">
   </p>
   
 - Once the data is loaded, data statistics should display a green 'FINISHED' message as show below.
@@ -137,12 +141,12 @@ All Set! The TigerGraph Database is up and running. Are we done? Almost! There i
 - Go to, Admin Dashboard->Users->Management and define a secret key as shown below,
 
   <p align="center">
-  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.10.56%20AM.png" width="700" height="450">
+  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.10.56%20AM.png">
   </p>
   
   
   <p align="center">
-  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.11.19%20AM.png" width="700" height="450">
+  <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Screen%20Shot%202021-12-28%20at%202.11.19%20AM.png">
   </p>
   
 - **NOTE:** Please remember to copy the key to be used in the RASA connection configuration (Movie_ChatBot/actions/actions.py)
@@ -175,10 +179,6 @@ Terminal-2:
 Hit open Chatbot-Widget/index.html to start interacting with the TigerBot movie recommendation engine!
 
 Yes, we are DONEEE! 
-
-Below video will highlight the runtime of this setup and some sample real-time conversations using the power of RASA + TigerGraph,
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Y1s2IwjFzKM/0.jpg)](https://www.youtube.com/watch?v=Y1s2IwjFzKM)
-
 
 Hope, this source is informative and helpful.
 
