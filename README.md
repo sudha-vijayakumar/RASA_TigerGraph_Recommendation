@@ -206,3 +206,9 @@ Hit open widget/index.html to start interacting with the TigerBot movie recommen
 Yes, we are DONE! 
 
 I hope this source is informative and helpful.
+
+
+# References:
+https://medium.com/analytics-vidhya/integrating-rasa-chatbot-with-django-web-framework-f6cb71c58467
+https://github.com/JiteshGaikwad/Chatbot-Widget/
+
