@@ -157,7 +157,7 @@ All Set! The TigerGraph Database is up and running. Are we done? Almost! There i
 ### Step-3: **(Web UI)** Setting up a web ui for the RASA chatbot
 
 - In this work, we are using a open-source javascript based chatbot UI to interact with the RASA solution we implemented in Step-1.
-- The RASA server endpoint is configured in the Chatbot-Widget/static/Chat.js as shown below,
+- The RASA server endpoint is configured in the widget/static/Chat.js as shown below,
  
   <p align="center">
   <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/snapshots/Screen%20Shot%202021-12-28%20at%202.17.45%20AM.png" width="700" height="450">
@@ -178,7 +178,7 @@ Terminal-2:
 
 ### Step-5: **(ChatBot UI)** Open Chatbot User interface
 
-Hit open Chatbot-Widget/index.html to start interacting with the TigerBot movie recommendation engine!
+Hit open widget/index.html to start interacting with the TigerBot movie recommendation engine!
 
 Yes, we are DONEEE! 
 
