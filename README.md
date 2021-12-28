@@ -1,6 +1,7 @@
 > How to run (shortcut):
 
 The below video will highlight the runtime of this setup and some sample real-time conversations using the power of RASA + TigerGraph,
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Y1s2IwjFzKM/0.jpg)](https://www.youtube.com/watch?v=Y1s2IwjFzKM)
 
 
@@ -15,7 +16,7 @@ This help page will not go into the depth of RASA, TigerGraph functionalities. T
 
 Here is the high-level outline of the technological stack used in this demo project,
 <p align="center">
-<img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/snapshots/TechnicalStack.jpg" width="400" height="700">
+<img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/snapshots/TechnicalStack.jpg" width="350" height="500">
 </p>
 
 
