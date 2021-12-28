@@ -14,11 +14,11 @@ The below video will highlight the runtime of this setup and some sample real-ti
 
   cd Movie_Chatbot
   
-  > Terminal-1:
+  >> Terminal-1:
   - $ rasa train
   - $ rasa run -m models --enable-api --cors "*" --debug
 
-  > Terminal-2:
+  >> Terminal-2:
   - $ rasa run actions
   
 >  Step-2: (Scroll down for detailed setup instructions)
