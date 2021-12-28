@@ -8,11 +8,11 @@ The below video will highlight the runtime of this setup and some sample real-ti
 
 > Step-0:
 
-  git clone https://github.com/sudha-vijayakumar/RASA_TigerGraph.git
+  - git clone https://github.com/sudha-vijayakumar/RASA_TigerGraph.git
   
 > Step-1: (Scroll down for detailed setup instructions)
 
-  cd Movie_Chatbot
+  - cd Movie_Chatbot
   
   >> Terminal-1:
   - $ rasa train
@@ -22,6 +22,7 @@ The below video will highlight the runtime of this setup and some sample real-ti
   - $ rasa run actions
   
 >  Step-2: (Scroll down for detailed setup instructions)
+>  
   - Run tgcloud solution
 
 # Project Overview: Movie recommendations using RASA + TigerGraph
