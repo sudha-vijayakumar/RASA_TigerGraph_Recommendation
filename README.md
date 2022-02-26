@@ -102,7 +102,7 @@ Add the defined action method to the domain.yml as shown below,
 <img src="https://github.com/sudha-vijayakumar/RASA_TigerGraph/blob/master/Movie_Chatbot/snapshots/Screen%20Shot%202021-12-28%20at%201.46.21%20AM.png" width="700" height="450">
 </p>
 
-Here, 'RecommendMovies' is the name of the CSQL query in the tgcloud database which will discuss in detail in the next section.
+Here, 'RecommendMovies' is the name of the GSQL query in the tgcloud database which will discuss in detail in the next section.
 
 With this step, we are done with the installation and configuration of the RASA chatbot.
 
