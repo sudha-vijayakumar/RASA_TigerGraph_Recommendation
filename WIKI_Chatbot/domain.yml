@@ -19,12 +19,18 @@ intents:
     use_entities: true
 - bot_challenge:
     use_entities: true
+
 - get_word_definition:
     use_entities: true
-- get_related_words:
+- get_all_connections:
     use_entities: true
-- get_word_pos:
+- get_hypernym:
     use_entities: true
+- get_hyponym:
+    use_entities: true
+- get_antonym:
+    use_entities: true
+
 entities:
 - wordid
 - userlocation
@@ -55,7 +61,9 @@ responses:
   - text: Hi there! I am TG Dictionary bot. I can find word definitions, related words! So, whats the word?
 actions:
 - action_word_definition
-- action_word_pos
-- action_related_words
+- action_hypernym
+- action_hyponym
+- action_antonyms
+- action_all_connections
 forms: {}
 e2e_actions: []

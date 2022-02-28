@@ -28,18 +28,30 @@ nlu:
     - what is the meaning of the word [telescope](wordid)?
     - what does [vegetable](wordid) mean?
 
-- intent: get_related_words
+- intent: get_antonym
+  examples: |
+    - what is the antonym of [science](wordid)?
+    - Antonym of [society](wordid)?
+    - what is the opposite of [telescope](wordid)?
+
+- intent: get_hypernym
+  examples: |
+    - what is the hypernym of [science](wordid)?
+    - Hypernym of [society](wordid)?
+    - what is the generic group of [telescope](wordid)?
+
+- intent: get_hyponym
+  examples: |
+    - what is the hyponym of [science](wordid)?
+    - Hyponym of [society](wordid)?
+    - what is the specific example of [telescope](wordid)?
+
+- intent: get_all_connections
   examples: |
     - words related to [science](wordid)?
     - list me some of the related words of [society](wordid)?
     - what are the words related to [telescope](wordid)?
     - get me some words similar to[vegetable](wordid)?
-
-- intent: get_word_pos
-  examples: |
-    - what are the different parts of speech for word [science](wordid)?
-    - list the parts of speech for word [society](wordid)?
-    - get me parts of speech for[vegetable](wordid)
 
 - intent: goodbye
   examples: |

@@ -23,19 +23,27 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
-- story: Story from Conversation ID 052329a6367c4f1682355236743032ec
+- story: Happy path
   steps:
   - intent: greet
   - action: utter_responsibility
   - intent: get_word_definition
     entities:
-    - wordid: vegetable
+    - wordid: reef
   - action: action_word_definition
-  - intent: get_word_pos
+  - intent: get_antonym
+    entities:
+    - wordid: surgical
+  - action: action_antonyms
+  - intent: get_hypernym
+    entities:
+    - wordid: reef
+  - action: action_hypernym
+  - intent: get_hyponym
+    entities:
+    - wordid: reef
+  - action: action_hyponym
+  - intent: get_all_connections
     entities:
     - wordid: vegetable
-  - action: action_word_pos
-  - intent: get_related_words
-    entities:
-    - wordid: vegetable
-  - action: action_related_words
+  - action: action_all_connections
